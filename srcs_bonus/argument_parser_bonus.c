@@ -33,9 +33,6 @@ static void	get_size(t_index_data *data, const char *s)
 			special_char = s[data->i++];
 			while (s[data->i] && s[data->i++] != special_char)
 				data->malloc_size++;
-			if (s[data->i] != ' ')
-				while (s[data->i] && s[data->i++] != special_char)
-					data->malloc_size++;
 		}
 		else
 		{

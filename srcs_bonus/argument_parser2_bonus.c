@@ -33,9 +33,6 @@ static void	ft_strcpy(char const *s, char **str, t_index_data *data)
 			special_char = s[data->i++];
 			while (s[data->i] && s[data->i] != special_char)
 				str[data->j][data->o++] = s[data->i++];
-			if (s[data->i] != ' ')
-				while (s[data->i] && s[data->i] != special_char)
-					str[data->j][data->o++] = s[data->i++];
 			data->i++;
 		}
 		else
