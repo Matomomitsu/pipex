@@ -6,7 +6,7 @@
 /*   By: mtomomit <mtomomit@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 20:24:39 by mtomomit          #+#    #+#             */
-/*   Updated: 2022/09/28 21:11:29 by mtomomit         ###   ########.fr       */
+/*   Updated: 2022/11/20 23:47:50 by mtomomit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,6 @@ static void	get_size(t_index_data *data, const char *s)
 			special_char = s[data->i++];
 			while (s[data->i] && s[data->i++] != special_char)
 				data->malloc_size++;
-			if (s[data->i] != ' ')
-				while (s[data->i] && s[data->i++] != special_char)
-					data->malloc_size++;
 		}
 		else
 		{
